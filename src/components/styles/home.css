@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+.text{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-image: url(https://cdna.artstation.com/p/assets/images/images/018/918/004/4k/kevin-leroy-screenshot-1681.jpg?1561244560);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.text h1{
+	color: white;
+	letter-spacing: 5px;
+	transition: all .3s ease-in-out;
+}
+
+.button{
+	width: 100%;
+	text-align: center;
+}
+
+.button button{
+	width: 250px;
+	padding: 28px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #08fdd8;
+	font-size: 17px;
+	letter-spacing: 2px;
+	border: 2px solid;
+	border-color: #08fdd8;
+	border-radius: 5px;
+	cursor: pointer;	
+	transition: all .3s ease-in-out;
+}
+
+.button button > .other-text{
+	width:0px; 
+	position: absolute;
+	background-color: #08fdd8;
+	color: black;
+	height: 77px;
+	margin-left: 194px;
+	margin-top: -29px;
+	font-size: 20px;
+	overflow: hidden;
+	transition: all .4s ease-in-out;
+}
+
+.button button:hover > .other-text{
+	width: 248px;
+	margin-left: -43px;
+	border-radius: 2px;
+}
+
+.contact-bar{
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 10px;	
+	display: flex;
+	flex-direction: row;
+}
+
+.icon{
+	display: flex;
+	flex-direction: row;
+	margin-left: 25px;	
+	border-radius: 10px;
+	overflow-x:hidden;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+
+.contact-bar .icons{
+	margin-left: 37.5%;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-bar a{
+	text-decoration: none;
+}
+
+.icon p{
+	color: black;
+	transform: translateX(1000px);
+	margin-right: 5px;
+	transition: all .5s ease-in-out;
+}
+
+.icon:hover{
+	background-color: white;
+}
+
+.icon:hover p{
+	transform: translateX(0px);
+}
+
+.icon .insta,
+.icon .face,
+.icon .whats{
+	margin-right: 6px;
+	margin-top: 14px;
+}
+
+.insta{
+	color: #E1306C;
+	font-size: 23px;
+}
+
+.face{
+	color: #4267B2;
+	font-size: 23px;
+}
+
+.whats{
+	color: #25D366;
+	font-size: 23px;
+}
+
+@media only screen and (max-width:800px){
+	.contact-bar .icons{
+		margin-left: 27%;
+	}
+}
+
+@media only screen and (max-width:650px){
+	.contact-bar .icons{
+		margin-left: 10%;
+	}
+}
+
+@media only screen and (max-width:400px){
+	.contact-bar .icons .icon{
+		margin-left: 0px;
+	}
+
+	.contact-bar .icons{
+		margin-left: 14%;
+	}
+}

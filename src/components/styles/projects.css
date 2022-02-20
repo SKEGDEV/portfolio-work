@@ -1,0 +1,232 @@
+.projects-tittle{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	text-align: center;
+	background-image: url("https://wallpapercave.com/wp/wp4816772.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.projects-tittle h1{
+	color: white;
+}
+
+.projects{
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.project{
+	width: 40%;
+	margin-left: 5%;
+	text-align: center;
+	overflow: hidden;
+	height: 350px;
+	transition: all .5s ease-in-out;
+}
+
+.project:hover{
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: #08fdd8;
+	box-shadow: 0px 0px 10px rgba(8,253,216,0.6);
+	height: 650px;
+}
+
+.project:hover button,
+.project:hover h2,
+.project:hover p{
+	transform: translateX(0px);
+	transform: translateY(0px);
+}
+
+.project:hover h4{
+	transform: translateY(1000px);
+}
+
+.project button{
+	margin-bottom: 30px;
+	width: 250px;
+	padding: 20px;
+	cursor: pointer;
+	border: none;
+	border: 1.5px solid;
+	border-radius: 5px;
+	border-color: #08fdd8;
+	color:#08fdd8;
+	background: none;
+	outline: none;
+	transform: translateX(-1000px);
+	transition: all .4s ease-in-out;
+	margin-top: 15px;
+}
+
+.project h2{
+	transform: translateX(1000px);
+	transition: all .4s ease-in-out;
+}
+
+.project h4{
+	transition: all .4s ease-in-out;
+}
+
+.project p{
+	transform: translateY(-1000px);
+	transition: all .4s ease-in-out;
+	width: 90%;
+	margin-left: 5%;
+	text-align: justify;
+}
+
+.project img{
+	width: 40%;
+}
+
+/*poke button design*/
+.poke-red,
+.poke-white{
+	position: absolute;
+	width: 0px;
+	font-size: 20px;
+	overflow: hidden;
+	transition: all .3s ease-in-out;
+}
+
+.project .poke:hover{
+	border-top-color: #ff1d1d;
+	border-left-color:#ff1d1d;
+	border-bottom-color: #fefeff;
+	border-right-color: #fefeff;
+}
+
+.poke-red{
+	background-color: #ff1d1d;
+	color: white;
+	height: 27px;
+	margin-top: -20px;
+	margin-left: 150px;
+	/*margin-left: -87px;*/
+	border-radius: 3px;
+}
+
+.project .poke:hover .poke-red{
+	margin-left: -87px;
+	width: 247px;
+	box-shadow: 0px 0px 20px rgba(254,254,255,0.7);
+}
+
+.poke-red p{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.poke-white{
+	background-color: #fefeff;
+	color:black;
+	height: 27px;
+	margin-top: 8px;
+	margin-left: -87px;
+}
+
+.project .poke:hover .poke-white{
+	width: 247px;
+	box-shadow: 0px 0px 20px rgba(255,29,29,0.7);
+}
+
+.poke-white p{
+	text-align: center;
+	margin-top: -11px;
+}
+
+/*rick button design*/
+.rick-blue,
+.rick-green{
+	position: absolute;
+	width: 0px;
+	font-size: 20px;
+	overflow: hidden;
+	transition: all .3s ease-in-out;
+}
+
+.project .rick:hover{
+	border-top-color: #81d4fa;
+	border-left-color:#81d4fa;
+	border-bottom-color: #43a047;
+	border-right-color: #43a047;
+}
+
+.rick-blue{
+	background-color: #81d4fa;
+	color: white;
+	height: 27px;
+	margin-top: -20px;
+	margin-left: 150px;
+	border-radius: 3px;
+}
+
+.project .rick:hover .rick-blue{
+	margin-left: -87px;
+	width: 247px;	
+	box-shadow: 0px 0px 20px rgba(67,160,71,0.7);
+}
+
+.rick-blue p{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.rick-green{
+	background-color: #43a047;
+	color:black;
+	height: 27px;
+	margin-top: 8px;
+	margin-left: -87px;
+}
+
+.project .rick:hover .rick-green{
+	width: 247px;
+	box-shadow: 0px 0px 20px rgba(129,212,250,0.7);
+}
+
+.rick-green p{
+	text-align: center;
+	margin-top: -11px;
+}
+
+.tittle-footer{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-image: url("https://wallpapercave.com/wp/wp4816772.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.tittle-footer h2{
+	color: white;
+}
+
+@media only screen and (max-width:700px){
+	.project{
+		width: 95%;
+		margin-left: 2.5%;
+		height: 400px;
+	}
+
+	.project:hover{
+		height: 700px;
+	}
+}
+

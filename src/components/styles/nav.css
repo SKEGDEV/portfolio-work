@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+
+body{
+	background-color: #141414;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	overflow-x: hidden;
+}
+
+header img{
+	width: 100px;
+	margin-left: 30px;
+	margin-top: 4px;
+}
+
+.ul-menu{
+	margin-left: 35%;
+	margin-top: 10px;
+}
+
+.ul-contact{
+	margin-left: 1%;
+	margin-top: 17px;
+}
+
+.ul-menu ul,
+.ul-contact ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+.ul-menu ul li,
+.ul-contact ul li{
+	margin-left: 20px;
+}
+
+.ul-menu ul li button{
+	border: none;
+	outline: none;
+	background: none;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	color: white;
+	transition: all .3s ease-in-out;
+}
+
+.ul-menu ul li button:hover{
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-radius: 5px;
+	border-color: #08fdd8;
+	color: #08fdd8;
+	box-shadow: 0px 0px 5px rgba(8,253,216,0.6);
+}
+
+.github,
+.linkedin{
+	font-size: 20px;
+	transition: all .3s ease-in-out;
+}
+
+.linkedin{
+	color: #0077b5;
+}
+
+.github{
+	color:  #f5f5f5;
+}
+
+.github:hover{
+	box-shadow: 0px 0px 20px rgba(245, 245, 245, 0.7);
+}
+
+.linkedin:hover{
+	box-shadow: 0px 0px 20px rgba(0, 119, 181, 0.7);
+}
+
+@media only screen and (max-width:1150px){
+
+	header .ul-menu{
+		margin-left: 25%;	
+	}
+}
+
+@media only screen and (max-width:1000px){
+	header .ul-menu{
+		margin-left: 15%;	
+	}
+}
+
+@media only screen and (max-width:900px){
+	header img{
+		width: 90px;
+		height: 50px;
+		margin-left: 0px;
+	}
+
+	header .ul-contact{
+		margin-top: 5px;
+	}
+
+	header .ul-menu{
+		transform: translateY(100px);	
+		width: 90%;	
+		position: absolute;
+		padding-bottom: 20px;
+		text-align: center;
+		margin-left: 2%;	
+		height: 0px;
+		overflow: hidden;
+		transition: all .5s ease-in-out;
+	}
+
+	header .expand{
+		height: 400px;
+		box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+		border-radius: 10px;
+		background-color: #141414;
+	}
+
+	header .ul-menu ul{
+		flex-direction: column;	
+	}
+
+	header .ul-menu ul li{
+		margin-left: 0px;
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	header .ul-menu ul li button{
+		width:100% ;
+		margin-left: 0px;
+	}
+
+	header .burger{
+		margin-top: 10px;
+		margin-left: 60%;
+		transition: all .3s ease-in-out;
+	}
+
+	header .burger .line1,
+	header .burger .line2,
+	header .burger .line3{
+		width: 50px;
+		height: 3px;
+		background-color: white;
+		margin-top: 10px;
+		transition: all .5s ease-in-out;
+		border-radius: 10px;
+	}
+
+	header .burger .line2{
+		width: 40px;
+	}
+
+	header .activate .line1{
+		width: 52px;
+		margin-left: -3px;
+	}
+
+	header .activate .line2{
+		width: 50px;
+		transform: rotate(55deg);
+		margin-top: 16px;
+		margin-left: -14px;
+		width: 45px;
+	}
+
+	header .activate .line3{
+		transform: rotate(-55deg);
+		margin-left: 12px;
+		margin-top: -4px;
+		width: 44px;
+	}
+	
+	header .activate{
+		transform: rotate(90deg);
+	}
+
+}
+
+@media only screen and (max-width:700px){
+	header .burger{
+		margin-left: 40%;
+	}
+}
+
+@media only screen and (max-width:450px){
+	header .burger{
+		margin-left: 15%;
+	}
+}
+
+

@@ -1,0 +1,88 @@
+.button button:hover > .cv{
+	margin-left: -35px;
+}
+
+.tittle{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-image: url(https://www.xtrafondos.com/descargar.php?id=3337&resolucion=3840x2160);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.tittle h1{
+	color:white;
+	letter-spacing: 5px;
+	transition: all 0.3s ease-in-out;
+}
+
+.text-about{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.text-about p {
+	color: white;
+	text-align: justify;
+	width: 60%;
+	margin-left: 20%;
+}
+.text-blue{
+	color: #2b8f7c;
+}
+.text-gold{
+	color: #ca9a67;
+}
+
+.skills{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.cards{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.card{
+	width: 40%;
+	margin-left: 5%;
+	margin-top: 50px;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: #08fdd8;
+}
+
+.card img{
+	width: 40%;
+}
+
+.card p{
+	text-align: justify;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+@media only screen and (max-width:900px){
+	.text-about p{
+		width: 95%;
+		margin-left: 2.5%;
+	}
+
+	.card{
+		width: 95%;
+		margin-left: 2.5%;
+	}
+}
