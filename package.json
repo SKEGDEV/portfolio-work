@@ -1,7 +1,7 @@
 {
   "name": "portfolio_v2",
   "version": "0.1.0",
-  "homepage": "http://SKEGDEV.github.io/edu-portfolio",
+  "homepage": "http://SKEGDEV.github.io/portfolio-work",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
