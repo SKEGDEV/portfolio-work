@@ -3,6 +3,7 @@ import Rotate from './helpers/rotate';
 import {useEffect} from 'react';
 import{	RiWhatsappFill, RiInstagramFill } from 'react-icons/ri';
 import {ImFacebook2} from 'react-icons/im';
+import {Link} from 'react-router-dom';
 
 export default function Home(){
 
@@ -26,6 +27,7 @@ export default function Home(){
 				</h1>
 			</div>
 			<div className="button">
+				<Link to="/contact-me">
 				<button id="btn-contact">
 					<span className="other-text">
 						<br />	
@@ -33,6 +35,7 @@ export default function Home(){
 					</span>
 					//:Contact me --{">"}
 				</button>
+					</Link>
 			</div>
 			<div className="contact-bar">
 				<div className="icons">

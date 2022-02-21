@@ -5,6 +5,7 @@ import javascript from '../img/javascript.svg';
 import react from '../img/reactjs.svg';
 import python from '../img/python.svg';
 import mysql from '../img/mysql.svg';
+import cv from './files/cv.pdf';
 
 export default function About(){
 
@@ -58,6 +59,7 @@ export default function About(){
 				</p>
 			</div>
 			<div className="button">
+				<a href={cv} download="cv.pdf" target="_blank">
 				<button id="btn-cv">
 				<span className="other-text cv">	
 					<br />	
@@ -65,6 +67,7 @@ export default function About(){
 				</span>
 					//:Download CV --{">"}
 				</button>
+					</a>
 			</div>
 			<div className="tittle skills">
 				<h1>Skills</h1>
